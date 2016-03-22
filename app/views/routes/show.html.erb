@@ -1,0 +1,17 @@
+<% if @no_trains == true %>
+  Non ci sono treni disponibili <br>
+<% else %>
+  Treno: durata <%= @trains_duration %>h, prezzo <%= @trains_price.round(2) %>€ <br>
+<% end %>
+
+<% if @no_bus == true %>
+  Non ci sono bus disponibili <br>
+<% else %>
+  Bus: durata <%= @bus_duration %>h, prezzo <%= @bus_price.round(2) %>€ <br>
+<% end %>
+
+<% if @no_flight == true %>
+  Non ci sono voli disponibili <br>
+<% else %>
+  Volo: durata <%= @flights_duration %>h, prezzo <%= @flights_price.round(2) %>€ <br>
+<% end %>
