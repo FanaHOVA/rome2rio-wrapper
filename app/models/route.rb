@@ -36,6 +36,7 @@ class Route < ActiveRecord::Base
       end
     end
 
+    # Se non ci sono viaggi per quel mezzo di transporto ritorniamo nil
     return nil if costs.empty?
 
     avg_minutes = (durations.sum.to_f / durations.count)

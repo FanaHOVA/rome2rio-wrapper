@@ -12,6 +12,8 @@ gem 'jbuilder', '~> 2.0'
 gem 'httparty'
 gem 'dotenv'
 
+gem 'rails_12factor', group: :production
+
 group :development, :test do
   gem 'byebug'
   gem 'rspec-rails', '~> 3.0'
@@ -19,7 +21,6 @@ group :development, :test do
 end
 
 group :development do
-  gem 'capistrano-rails'
   gem 'web-console', '~> 2.0'
   gem 'spring'
 end
